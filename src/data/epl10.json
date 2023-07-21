@@ -52,52 +52,6 @@
               "score": 1
             }
           ]
-        },
-        {
-          "id": 0,
-          "status": "walk_over",
-          "team_radiant_id": 43271,
-          "team_dire_id": 0,
-          "best_of_score": [1, 0],
-          "teams": [
-            {
-              "name": "ex-Monaspa",
-              "tag": "ex-Monaspa",
-              "id": 43271,
-              "image": "https://media.cyberscore.live/static/teams/2023/5/f6a63b13-9f9a-4f1a-bd8f-d9983af85c26.png",
-              "score": 1
-            },
-            {
-              "name": "Bye",
-              "tag": "",
-              "id": -3,
-              "image": "",
-              "score": 0
-            }
-          ]
-        },
-        {
-          "id": 0,
-          "status": "walk_over",
-          "team_radiant_id": 43311,
-          "team_dire_id": 0,
-          "best_of_score": [1, 0],
-          "teams": [
-            {
-              "name": "Luna Galaxy",
-              "tag": "Luna Galaxy",
-              "id": 43311,
-              "image": "https://media.cyberscore.live/static/teams/2023/6/1381bdec-b42e-466b-938c-ff91b89a85c3.png",
-              "score": 1
-            },
-            {
-              "name": "Bye",
-              "tag": "",
-              "id": -4,
-              "image": "",
-              "score": 0
-            }
-          ]
         }
       ]
     },
@@ -187,7 +141,7 @@
       ]
     },
     {
-      "title": "Final - Match",
+      "title": "upper__grand_final",
       "matches": [
         {
           "id": 54975,

@@ -4,31 +4,23 @@ import Tabs from './components/Tabs';
 import Bracket from './components/Bracket';
 
 import epl10Data from './data/epl10.json';
-import correctData from './data/correct.json';
+import baliMajorData from './data/bali_major.json';
+import berlinMajorData from './data/berlin_major.json';
 
 import { transformMatches } from './utils/transformMatches';
 
-const useDummyCorrectData = false;
 const data = [
-  { name: 'EPL 10', data: useDummyCorrectData ? correctData : epl10Data },
+  { name: 'EPL 10', data: epl10Data },
+  { name: 'Bali Major', data: baliMajorData },
+  { name: 'Berlin Major', data: berlinMajorData },
 ];
 
 function App() {
   const [selectedTab, setSelectedTab] = useState(data[0].name);
   const selectedData = data.find(({ name }) => name === selectedTab).data;
-  let transformedData = useDummyCorrectData
-    ? selectedData
-    : transformMatches(selectedData);
+  let transformedData = transformMatches(selectedData);
 
-  console.log({
-    useDummyCorrectData,
-    upperLength: transformedData.upper.length,
-    lowerLength: transformedData.lower.length,
-  });
-
-  if (!useDummyCorrectData) {
-    console.log(JSON.stringify(transformedData));
-  }
+  console.log(JSON.stringify(transformedData));
 
   return (
     <>

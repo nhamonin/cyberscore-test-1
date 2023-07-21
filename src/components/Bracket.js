@@ -5,7 +5,9 @@ import {
 } from '@g-loot/react-tournament-brackets';
 
 function Bracket({ data }) {
-  return data?.upper?.length && data?.lower?.length ? (
+  const isDoubleElimination = data?.upper?.length && data?.lower?.length;
+
+  return isDoubleElimination ? (
     <DoubleEliminationBracket matches={data} matchComponent={Match} />
   ) : (
     <SingleEliminationBracket matches={data} matchComponent={Match} />

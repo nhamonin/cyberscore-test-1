@@ -26,7 +26,7 @@
     {
       "id": 54964,
       "nextMatchId": 54968,
-      "nextLooserMatchId": 54966,
+      "nextLooserMatchId": 54967,
       "status": "SCORE_DONE",
       "tournamentRoundText": "upper__quarterfinal",
       "participants": [
@@ -43,52 +43,6 @@
           "resultText": "1",
           "isWinner": false,
           "name": "KZ TEAM"
-        }
-      ]
-    },
-    {
-      "id": 0,
-      "nextMatchId": 54968,
-      "nextLooserMatchId": 54966,
-      "status": "WALK_OVER",
-      "tournamentRoundText": "upper__quarterfinal",
-      "participants": [
-        {
-          "id": 43271,
-          "status": "WALK_OVER",
-          "resultText": "1",
-          "isWinner": true,
-          "name": "ex-Monaspa"
-        },
-        {
-          "id": -3,
-          "status": "WALK_OVER",
-          "resultText": "0",
-          "isWinner": false,
-          "name": "Bye"
-        }
-      ]
-    },
-    {
-      "id": 0,
-      "nextMatchId": 54969,
-      "nextLooserMatchId": 54966,
-      "status": "WALK_OVER",
-      "tournamentRoundText": "upper__quarterfinal",
-      "participants": [
-        {
-          "id": 43311,
-          "status": "WALK_OVER",
-          "resultText": "1",
-          "isWinner": true,
-          "name": "Luna Galaxy"
-        },
-        {
-          "id": -4,
-          "status": "WALK_OVER",
-          "resultText": "0",
-          "isWinner": false,
-          "name": "Bye"
         }
       ]
     },
@@ -118,7 +72,7 @@
     {
       "id": 54969,
       "nextMatchId": 54973,
-      "nextLooserMatchId": 58635,
+      "nextLooserMatchId": 54970,
       "status": "SCORE_DONE",
       "tournamentRoundText": "upper__semifinal",
       "participants": [
@@ -141,7 +95,7 @@
     {
       "id": 54973,
       "nextMatchId": 54975,
-      "nextLooserMatchId": 54972,
+      "nextLooserMatchId": 54974,
       "status": "SCORE_DONE",
       "tournamentRoundText": "upper__final",
       "participants": [
@@ -303,7 +257,7 @@
     },
     {
       "id": 54974,
-      "nextMatchId": null,
+      "nextMatchId": 54975,
       "nextLooserMatchId": null,
       "status": "SCORE_DONE",
       "tournamentRoundText": "lower__final",
