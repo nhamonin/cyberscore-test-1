@@ -1,0 +1,420 @@
+{
+  "upper": [
+    {
+      "id": 47782,
+      "nextMatchId": 47790,
+      "nextLooserMatchId": 47786,
+      "status": "SCORE_DONE",
+      "tournamentRoundText": "upper__quarterfinal",
+      "participants": [
+        {
+          "id": 10565,
+          "status": "PLAYED",
+          "resultText": "2",
+          "isWinner": true,
+          "name": "Gaimin Gladiators"
+        },
+        {
+          "id": 646,
+          "status": "PLAYED",
+          "resultText": "0",
+          "isWinner": false,
+          "name": "Team Spirit"
+        }
+      ]
+    },
+    {
+      "id": 47783,
+      "nextMatchId": 47790,
+      "nextLooserMatchId": 47787,
+      "status": "SCORE_DONE",
+      "tournamentRoundText": "upper__quarterfinal",
+      "participants": [
+        {
+          "id": 3740,
+          "status": "PLAYED",
+          "resultText": "2",
+          "isWinner": true,
+          "name": "OG"
+        },
+        {
+          "id": 674,
+          "status": "PLAYED",
+          "resultText": "1",
+          "isWinner": false,
+          "name": "Team Liquid"
+        }
+      ]
+    },
+    {
+      "id": 47784,
+      "nextMatchId": 47791,
+      "nextLooserMatchId": 47788,
+      "status": "SCORE_DONE",
+      "tournamentRoundText": "upper__quarterfinal",
+      "participants": [
+        {
+          "id": 43132,
+          "status": "PLAYED",
+          "resultText": "2",
+          "isWinner": true,
+          "name": "9 Pandas"
+        },
+        {
+          "id": 37066,
+          "status": "PLAYED",
+          "resultText": "0",
+          "isWinner": false,
+          "name": "Shopify Rebellion"
+        }
+      ]
+    },
+    {
+      "id": 47785,
+      "nextMatchId": 47791,
+      "nextLooserMatchId": 47789,
+      "status": "SCORE_DONE",
+      "tournamentRoundText": "upper__quarterfinal",
+      "participants": [
+        {
+          "id": 672,
+          "status": "PLAYED",
+          "resultText": "2",
+          "isWinner": true,
+          "name": "Tundra Esports"
+        },
+        {
+          "id": 285,
+          "status": "PLAYED",
+          "resultText": "1",
+          "isWinner": false,
+          "name": "PSG.LGD"
+        }
+      ]
+    },
+    {
+      "id": 47790,
+      "nextMatchId": 47796,
+      "nextLooserMatchId": 47792,
+      "status": "SCORE_DONE",
+      "tournamentRoundText": "upper__semifinal",
+      "participants": [
+        {
+          "id": 10565,
+          "status": "PLAYED",
+          "resultText": "2",
+          "isWinner": true,
+          "name": "Gaimin Gladiators"
+        },
+        {
+          "id": 3740,
+          "status": "PLAYED",
+          "resultText": "0",
+          "isWinner": false,
+          "name": "OG"
+        }
+      ]
+    },
+    {
+      "id": 47791,
+      "nextMatchId": 47796,
+      "nextLooserMatchId": 47793,
+      "status": "SCORE_DONE",
+      "tournamentRoundText": "upper__semifinal",
+      "participants": [
+        {
+          "id": 43132,
+          "status": "PLAYED",
+          "resultText": "2",
+          "isWinner": true,
+          "name": "9 Pandas"
+        },
+        {
+          "id": 672,
+          "status": "PLAYED",
+          "resultText": "1",
+          "isWinner": false,
+          "name": "Tundra Esports"
+        }
+      ]
+    },
+    {
+      "id": 47796,
+      "nextMatchId": 47799,
+      "nextLooserMatchId": 47798,
+      "status": "SCORE_DONE",
+      "tournamentRoundText": "upper__final",
+      "participants": [
+        {
+          "id": 10565,
+          "status": "PLAYED",
+          "resultText": "2",
+          "isWinner": true,
+          "name": "Gaimin Gladiators"
+        },
+        {
+          "id": 43132,
+          "status": "PLAYED",
+          "resultText": "0",
+          "isWinner": false,
+          "name": "9 Pandas"
+        }
+      ]
+    },
+    {
+      "id": 47799,
+      "nextMatchId": null,
+      "nextLooserMatchId": null,
+      "status": "SCORE_DONE",
+      "tournamentRoundText": "upper__grand_final",
+      "participants": [
+        {
+          "id": 10565,
+          "status": "PLAYED",
+          "resultText": "3",
+          "isWinner": true,
+          "name": "Gaimin Gladiators"
+        },
+        {
+          "id": 674,
+          "status": "PLAYED",
+          "resultText": "1",
+          "isWinner": false,
+          "name": "Team Liquid"
+        }
+      ]
+    }
+  ],
+  "lower": [
+    {
+      "id": 47786,
+      "nextMatchId": 47792,
+      "nextLooserMatchId": null,
+      "status": "SCORE_DONE",
+      "tournamentRoundText": "lower__r1",
+      "participants": [
+        {
+          "id": 646,
+          "status": "PLAYED",
+          "resultText": "0",
+          "isWinner": false,
+          "name": "Team Spirit"
+        },
+        {
+          "id": 275,
+          "status": "PLAYED",
+          "resultText": "2",
+          "isWinner": true,
+          "name": "Team Aster"
+        }
+      ]
+    },
+    {
+      "id": 47787,
+      "nextMatchId": 47792,
+      "nextLooserMatchId": null,
+      "status": "SCORE_DONE",
+      "tournamentRoundText": "lower__r1",
+      "participants": [
+        {
+          "id": 7029,
+          "status": "PLAYED",
+          "resultText": "1",
+          "isWinner": false,
+          "name": "Xtreme Gaming"
+        },
+        {
+          "id": 674,
+          "status": "PLAYED",
+          "resultText": "2",
+          "isWinner": true,
+          "name": "Team Liquid"
+        }
+      ]
+    },
+    {
+      "id": 47788,
+      "nextMatchId": 47793,
+      "nextLooserMatchId": null,
+      "status": "SCORE_DONE",
+      "tournamentRoundText": "lower__r1",
+      "participants": [
+        {
+          "id": 37066,
+          "status": "PLAYED",
+          "resultText": "0",
+          "isWinner": false,
+          "name": "Shopify Rebellion"
+        },
+        {
+          "id": 3717,
+          "status": "PLAYED",
+          "resultText": "2",
+          "isWinner": true,
+          "name": "Evil Geniuses"
+        }
+      ]
+    },
+    {
+      "id": 47789,
+      "nextMatchId": 47793,
+      "nextLooserMatchId": null,
+      "status": "SCORE_DONE",
+      "tournamentRoundText": "lower__r1",
+      "participants": [
+        {
+          "id": 285,
+          "status": "PLAYED",
+          "resultText": "0",
+          "isWinner": false,
+          "name": "PSG.LGD"
+        },
+        {
+          "id": 7177,
+          "status": "PLAYED",
+          "resultText": "2",
+          "isWinner": true,
+          "name": "Talon Esports"
+        }
+      ]
+    },
+    {
+      "id": 47792,
+      "nextMatchId": 47795,
+      "nextLooserMatchId": null,
+      "status": "SCORE_DONE",
+      "tournamentRoundText": "lower__r2",
+      "participants": [
+        {
+          "id": 275,
+          "status": "PLAYED",
+          "resultText": "0",
+          "isWinner": false,
+          "name": "Team Aster"
+        },
+        {
+          "id": 674,
+          "status": "PLAYED",
+          "resultText": "2",
+          "isWinner": true,
+          "name": "Team Liquid"
+        }
+      ]
+    },
+    {
+      "id": 47793,
+      "nextMatchId": 47794,
+      "nextLooserMatchId": null,
+      "status": "SCORE_DONE",
+      "tournamentRoundText": "lower__r2",
+      "participants": [
+        {
+          "id": 7177,
+          "status": "PLAYED",
+          "resultText": "0",
+          "isWinner": false,
+          "name": "Talon Esports"
+        },
+        {
+          "id": 3717,
+          "status": "PLAYED",
+          "resultText": "2",
+          "isWinner": true,
+          "name": "Evil Geniuses"
+        }
+      ]
+    },
+    {
+      "id": 47795,
+      "nextMatchId": 47797,
+      "nextLooserMatchId": null,
+      "status": "SCORE_DONE",
+      "tournamentRoundText": "lower__quarterfinal",
+      "participants": [
+        {
+          "id": 672,
+          "status": "PLAYED",
+          "resultText": "0",
+          "isWinner": false,
+          "name": "Tundra Esports"
+        },
+        {
+          "id": 674,
+          "status": "PLAYED",
+          "resultText": "2",
+          "isWinner": true,
+          "name": "Team Liquid"
+        }
+      ]
+    },
+    {
+      "id": 47794,
+      "nextMatchId": 47797,
+      "nextLooserMatchId": null,
+      "status": "SCORE_DONE",
+      "tournamentRoundText": "lower__quarterfinal",
+      "participants": [
+        {
+          "id": 3740,
+          "status": "PLAYED",
+          "resultText": "1",
+          "isWinner": false,
+          "name": "OG"
+        },
+        {
+          "id": 3717,
+          "status": "PLAYED",
+          "resultText": "2",
+          "isWinner": true,
+          "name": "Evil Geniuses"
+        }
+      ]
+    },
+    {
+      "id": 47797,
+      "nextMatchId": 47798,
+      "nextLooserMatchId": null,
+      "status": "SCORE_DONE",
+      "tournamentRoundText": "lower__semifinal",
+      "participants": [
+        {
+          "id": 674,
+          "status": "PLAYED",
+          "resultText": "2",
+          "isWinner": true,
+          "name": "Team Liquid"
+        },
+        {
+          "id": 3717,
+          "status": "PLAYED",
+          "resultText": "0",
+          "isWinner": false,
+          "name": "Evil Geniuses"
+        }
+      ]
+    },
+    {
+      "id": 47798,
+      "nextMatchId": 47799,
+      "nextLooserMatchId": null,
+      "status": "SCORE_DONE",
+      "tournamentRoundText": "lower__final",
+      "participants": [
+        {
+          "id": 674,
+          "status": "PLAYED",
+          "resultText": "2",
+          "isWinner": true,
+          "name": "Team Liquid"
+        },
+        {
+          "id": 43132,
+          "status": "PLAYED",
+          "resultText": "1",
+          "isWinner": false,
+          "name": "9 Pandas"
+        }
+      ]
+    }
+  ]
+}

@@ -47,6 +47,36 @@
       ]
     },
     {
+      "id": 43312,
+      "nextMatchId": 54968,
+      "nextLooserMatchId": null,
+      "tournamentRoundText": "upper__quarterfinal",
+      "participants": [
+        {
+          "id": 43271,
+          "resultText": "1",
+          "isWinner": true,
+          "name": "ex-Monaspa"
+        },
+        { "id": -1, "resultText": "0", "isWinner": false, "name": "Bye" }
+      ]
+    },
+    {
+      "id": 43313,
+      "nextMatchId": 54969,
+      "nextLooserMatchId": null,
+      "tournamentRoundText": "upper__quarterfinal",
+      "participants": [
+        {
+          "id": 43311,
+          "resultText": "1",
+          "isWinner": true,
+          "name": "Luna Galaxy"
+        },
+        { "id": -1, "resultText": "0", "isWinner": false, "name": "Bye" }
+      ]
+    },
+    {
       "id": 54968,
       "nextMatchId": 54973,
       "nextLooserMatchId": 58635,
@@ -120,7 +150,7 @@
       "nextMatchId": null,
       "nextLooserMatchId": null,
       "status": "SCORE_DONE",
-      "tournamentRoundText": "Final - Match",
+      "tournamentRoundText": "upper__grand_final",
       "participants": [
         {
           "id": 38481,
