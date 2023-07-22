@@ -18,7 +18,7 @@ const data = [
 function App() {
   const [selectedTab, setSelectedTab] = useState(data[0].name);
   const selectedData = data.find(({ name }) => name === selectedTab).data;
-  let transformedData = transformMatches(selectedData);
+  const transformedData = transformMatches(selectedData);
 
   console.log(JSON.stringify(transformedData));
 
