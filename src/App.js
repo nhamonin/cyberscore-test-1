@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import Tabs from './components/Tabs';
-import Bracket from './components/Bracket';
+import { DoubleElimination } from './components/DoubleElimination';
 
 import epl10Data from './data/epl10.json';
 import baliMajorData from './data/bali_major.json';
@@ -20,19 +20,15 @@ function App() {
   const selectedData = data.find(({ name }) => name === selectedTab).data;
   const transformedData = transformMatches(selectedData);
 
-  console.log(JSON.stringify(transformedData));
-
   return (
-    <>
-      <div className="container mx-auto py-8">
-        <Tabs
-          data={data}
-          selectedTab={selectedTab}
-          setSelectedTab={setSelectedTab}
-        />
-      </div>
-      <Bracket data={transformedData} />
-    </>
+    <div className="container mx-auto py-8">
+      <Tabs
+        data={data}
+        selectedTab={selectedTab}
+        setSelectedTab={setSelectedTab}
+      />
+      <DoubleElimination data={transformedData} />
+    </div>
   );
 }
 
