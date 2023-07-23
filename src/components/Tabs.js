@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
-function Tabs({ data, selectedTab, setSelectedTab }) {
+export function Tabs({ data, selectedTab, setSelectedTab }) {
   const navigate = useNavigate();
 
   const handleUploadClick = () => {
@@ -39,5 +39,3 @@ function Tabs({ data, selectedTab, setSelectedTab }) {
     </div>
   );
 }
-
-export default Tabs;

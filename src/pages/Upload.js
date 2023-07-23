@@ -4,9 +4,12 @@ import { useLocation } from 'react-router-dom';
 
 import { transformMatches } from '../utils/transformMatches';
 
-const maxSize = 5 * 1024 * 1024; // 5MB
+const maxSize = {
+  value: 5242880,
+  string: '5MB',
+};
 
-export function UploadPage({ onUpload, setSelectedTab, data }) {
+export function Upload({ onUpload, setSelectedTab }) {
   const [error, setError] = useState(null);
   const location = useLocation();
 
@@ -17,8 +20,7 @@ export function UploadPage({ onUpload, setSelectedTab, data }) {
   }, [location, setSelectedTab]);
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
-    accept: '.json',
-    maxSize,
+    maxSize: maxSize.value,
     onDrop: (acceptedFiles) => {
       acceptedFiles.forEach((file) => {
         const reader = new FileReader();
@@ -50,11 +52,13 @@ export function UploadPage({ onUpload, setSelectedTab, data }) {
           isDragActive
             ? 'border-green-500 bg-green-100 text-green-700'
             : 'border-gray-500 text-gray-800'
-        }`}
+        } h-[calc(100vh-160px)]`}
     >
       <input {...getInputProps()} />
       <p className="text-lg">
-        Drag 'n' drop some files here, or click to select files
+        Drag 'n' drop or click to select your tournament's <b>JSON file</b> for
+        a <b>Double Elimination</b> bracket. Please ensure that the file is a
+        valid JSON and does not exceed <b>{maxSize.string}</b>.
       </p>
       {error && <p className="text-red-600">{error}</p>}
     </div>

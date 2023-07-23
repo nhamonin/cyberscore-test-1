@@ -1,4 +1,5 @@
 import { useState } from 'react';
+
 import { TournamentBracket } from './TournamentBracket';
 
 export const DoubleElimination = ({ data }) => {
