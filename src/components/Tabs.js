@@ -9,7 +9,7 @@ export function Tabs({ data, selectedTab, setSelectedTab }) {
   };
 
   return (
-    <div className="flex flex-wrap justify-center items-center mb-10">
+    <div className="flex flex-wrap justify-center items-center w-full pt-3 pb-10">
       {data.map((_, index) => (
         <button
           key={index}

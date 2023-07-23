@@ -34,7 +34,7 @@ export function useTournamentData() {
       navigate('/');
     } catch (error) {
       setError(
-        "Failed to process uploaded data. Please ensure it's a valid JSON."
+        "Failed to process uploaded data. Please ensure it's a valid JSON and the file size is less than 5MB."
       );
     }
   };

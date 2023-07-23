@@ -34,7 +34,7 @@ export function Upload({ onUpload, setSelectedTab }) {
           } catch (error) {
             console.error('Invalid JSON:', error);
             setError(
-              "Failed to parse uploaded data. Please ensure it's a valid JSON."
+              "Failed to process uploaded data. Please ensure it's a valid JSON and the file size is less than 5MB."
             );
           }
         };

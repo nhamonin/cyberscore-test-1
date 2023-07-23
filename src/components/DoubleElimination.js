@@ -6,7 +6,7 @@ export const DoubleElimination = ({ data }) => {
   const [hoveredTeam, setHoveredTeam] = useState(null);
 
   return (
-    <div className="relative">
+    <div className="relative overflow-x-auto">
       <TournamentBracket
         rounds={data.upper}
         hoveredTeam={hoveredTeam}
