@@ -23,12 +23,9 @@ export const CustomSeed = ({
             key={team.id}
             className={`flex items-center justify-between ${
               index === 0 ? 'border-b border-gray-400' : ''
-            }`}
+            } ${team.id === hoveredTeam ? 'bg-blue-600' : ''}`}
             onMouseEnter={() => setHoveredTeam(team.id)}
             onMouseLeave={() => setHoveredTeam(null)}
-            style={{
-              backgroundColor: team.id === hoveredTeam ? '#0284c7' : '',
-            }}
           >
             <img
               src={team?.image}

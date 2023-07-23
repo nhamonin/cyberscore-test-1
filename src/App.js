@@ -26,9 +26,9 @@ function Main() {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
-  const handleUpload = (fileName, jsonData) => {
+  const handleUpload = (_, jsonData) => {
     try {
-      setData((prevData) => [...prevData, transformMatches(jsonData)]);
+      setData((prevData) => [...prevData, jsonData]);
       setSelectedTab(data.length);
       navigate('/');
     } catch (error) {
@@ -57,7 +57,12 @@ function Main() {
         />
         <Route
           path="/upload"
-          element={<UploadPage onUpload={handleUpload} />}
+          element={
+            <UploadPage
+              onUpload={handleUpload}
+              setSelectedTab={setSelectedTab}
+            />
+          }
         />
       </Routes>
     </div>
