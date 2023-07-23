@@ -17,7 +17,7 @@ export function Tabs({ data, selectedTab, setSelectedTab }) {
             setSelectedTab(index);
             navigate('/');
           }}
-          className={`py-2 px-3 mx-2 text-center rounded font-bold text-lg transition duration-200 ${
+          className={`py-2 px-1 sm:px-3 mx-1 sm:mx-2 text-center rounded font-bold text-sm sm:text-lg transition duration-200 ${
             index === selectedTab
               ? 'bg-gray-900 text-white'
               : 'border border-gray-400 bg-white text-gray-900 hover:bg-blue-600 hover:text-white'
@@ -28,7 +28,7 @@ export function Tabs({ data, selectedTab, setSelectedTab }) {
       ))}
       <button
         onClick={handleUploadClick}
-        className={`py-2 px-3 mx-2 text-center rounded font-bold text-lg transition duration-200 ${
+        className={`py-2 px-1 sm:px-3 mx-1 sm:mx-2 text-center rounded font-bold text-sm sm:text-lg transition duration-200 ${
           selectedTab === null
             ? 'bg-gray-900 text-white'
             : 'border border-gray-400 bg-white text-gray-900 hover:bg-blue-600 hover:text-white'
