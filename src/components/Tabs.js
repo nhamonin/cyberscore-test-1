@@ -1,19 +1,32 @@
+import { Link, useNavigate } from 'react-router-dom';
+
 function Tabs({ data, selectedTab, setSelectedTab }) {
+  const navigate = useNavigate();
+
   return (
-    <div className="flex space-x-4 content-center flex-wrap justify-center mb-10">
-      {data.map(({ name }) => (
+    <div className="flex flex-wrap justify-center items-center mb-10">
+      {data.map((_, index) => (
         <button
-          key={name}
-          onClick={() => setSelectedTab(name)}
-          className={`p-2 rounded ${
-            name === selectedTab
-              ? 'bg-gray-900 text-white p-3'
-              : 'bg-white text-black'
+          key={index}
+          onClick={() => {
+            setSelectedTab(index);
+            navigate('/');
+          }}
+          className={`py-2 px-3 mx-2 text-center rounded font-bold text-lg shadow-md ${
+            index === selectedTab
+              ? 'bg-gray-900 text-white'
+              : 'bg-gray-300 text-gray-900'
           }`}
         >
-          {name}
+          Tournament #{index + 1}
         </button>
       ))}
+      <Link
+        to="/upload"
+        className="flex items-center justify-center w-10 h-10 text-lg font-bold text-white transition duration-200 bg-gray-900 rounded-full shadow-md hover:bg-gray-700"
+      >
+        +
+      </Link>
     </div>
   );
 }

@@ -1,7 +1,14 @@
 import { useState } from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useNavigate,
+} from 'react-router-dom';
 
 import Tabs from './components/Tabs';
 import { DoubleElimination } from './components/DoubleElimination';
+import { UploadPage } from './components/UploadPage';
 
 import epl10Data from './data/epl10.json';
 import baliMajorData from './data/bali_major.json';
@@ -9,16 +16,27 @@ import berlinMajorData from './data/berlin_major.json';
 
 import { transformMatches } from './utils/transformMatches';
 
-const data = [
-  { name: 'EPL 10', data: epl10Data },
-  { name: 'Bali Major', data: baliMajorData },
-  { name: 'Berlin Major', data: berlinMajorData },
-];
+const initialData = [epl10Data, baliMajorData, berlinMajorData].map(
+  transformMatches
+);
 
-function App() {
-  const [selectedTab, setSelectedTab] = useState(data[0].name);
-  const selectedData = data.find(({ name }) => name === selectedTab).data;
-  const transformedData = transformMatches(selectedData);
+function Main() {
+  const [data, setData] = useState(initialData);
+  const [selectedTab, setSelectedTab] = useState(0);
+  const [error, setError] = useState(null);
+  const navigate = useNavigate();
+
+  const handleUpload = (fileName, jsonData) => {
+    try {
+      setData((prevData) => [...prevData, transformMatches(jsonData)]);
+      setSelectedTab(data.length);
+      navigate('/');
+    } catch (error) {
+      setError(
+        "Failed to process uploaded data. Please ensure it's a valid JSON."
+      );
+    }
+  };
 
   return (
     <div className="container mx-auto py-8">
@@ -27,8 +45,30 @@ function App() {
         selectedTab={selectedTab}
         setSelectedTab={setSelectedTab}
       />
-      <DoubleElimination data={transformedData} />
+      {error && <div className="text-red-600">{error}</div>}
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <DoubleElimination
+              data={data.find((_, index) => index === selectedTab) || {}}
+            />
+          }
+        />
+        <Route
+          path="/upload"
+          element={<UploadPage onUpload={handleUpload} />}
+        />
+      </Routes>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Main />
+    </Router>
   );
 }
 
