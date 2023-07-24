@@ -23,15 +23,13 @@ const initialData = [epl10Data, baliMajorData, berlinMajorData]
 
 export function useTournamentData() {
   const [data, setData] = useState(initialData);
-  const [selectedTab, setSelectedTab] = useState(0);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
   const handleUpload = (_, jsonData) => {
     try {
       setData((prevData) => [...prevData, jsonData]);
-      setSelectedTab(data.length);
-      navigate('/');
+      navigate(`/tournament/${data.length + 1}`);
     } catch (error) {
       setError(
         "Failed to process uploaded data. Please ensure it's a valid JSON and the file size is less than 5MB."
@@ -39,5 +37,5 @@ export function useTournamentData() {
     }
   };
 
-  return { data, selectedTab, setSelectedTab, error, handleUpload };
+  return { data, error, handleUpload };
 }

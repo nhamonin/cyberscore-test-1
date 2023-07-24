@@ -18,7 +18,7 @@ export const TournamentBracket = ({ rounds, hoveredTeam, setHoveredTeam }) => {
           />
         );
       }}
-      roundTitleComponent={(title, roundIndex) => {
+      roundTitleComponent={(title) => {
         return (
           <div className="flex justify-center">
             <span className="text-white bg-gray-900 rounded-lg py-2 px-4">

@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useDropzone } from 'react-dropzone';
-import { useLocation } from 'react-router-dom';
 
 import { transformMatches } from '../utils/transformMatches';
 
@@ -9,15 +8,8 @@ const maxSize = {
   string: '5MB',
 };
 
-export function Upload({ onUpload, setSelectedTab }) {
+export function Upload({ onUpload }) {
   const [error, setError] = useState(null);
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.pathname === '/upload') {
-      setSelectedTab(null);
-    }
-  }, [location, setSelectedTab]);
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     maxSize: maxSize.value,
